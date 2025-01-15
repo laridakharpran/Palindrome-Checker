@@ -1,0 +1,90 @@
+:root {
+  --bg-color: #0a0a23;
+  --text-color: #fff;
+  --card-bg: #ffffff;
+  --accent-color: #5a01a7;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.checker {
+  background: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 20px;
+}
+
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input {
+  border: 2px solid var(--accent-color);
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #7202d1;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+#result, #history {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --accent-color: #bb86fc;
+}
